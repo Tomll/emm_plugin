@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">SGM</string>
+    <string name="device_name">SGM设备</string>
+    <string name="accessibility_name">SGM服务</string>
+
+    <string name="app_accessibility_description">SGM运行所需要的关键服务</string>
+
+    <string name="allow">允许</string>
+    <string name="disallow">拒绝</string>
+
+    <string name="play_alarm">播放铃声</string>
+    <string name="stop_play_alarm">停止播放铃声</string>
+
+
+    <string name="get_location_info">获取位置信息</string>
+    <string name="get_location_infos">获取位置信息</string>
+
+    <string name="location_failed_result_info">定位失败，loc is null</string>
+
+
+    <string name="settings">设置</string>
+    <string name="help">帮助</string>
+    <string name="quit">退出</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="string_find_password">若忘记密码，请联系管理员</string>
+
+
+    <!--菜单-->
+    <string-array name="planets_array">
+        <item>工作台</item>
+        <item>消息通知</item>
+        <item>设置</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+</resources>

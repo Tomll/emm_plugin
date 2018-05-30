@@ -1,0 +1,44 @@
+﻿{
+    "policy_id":0,
+    "policy_name": "",
+    "policy_desc": "",
+    "password": {
+        "pwLength": 4,
+        "pwComplexity": 0,
+        "minChars": 1,
+        "minLowerChars": 0,
+        "minUpperChars": 0,
+        "minNonalphabetic": 0,
+        "minDigital": 1,
+        "minSymbols": 1,
+        "maxFailedAttempts": -1,
+        "maxPinageInDays": 0,
+        "pinHistory": 0,
+        "maxInactivity": 0,
+        "configFlag": 0
+    },
+    "restriction": {
+        "allowCamera": 1,
+        "allowSdCard": 1,
+        "allowWifi": 1,
+        "allowBluetooth": 1,
+        "allowCellular": 1,
+        "allowMobileHotspot": 1,
+        "allow_gps": -1,
+        "allowDateTime": 1,
+        "allowUnknownSources": 1,
+        "allowSafeMode": 1,
+        "allowADB": 1,
+        "allowMTP": 1,
+        "allowRecord": 1,
+        "allowScreenshots": 1,
+        "allowWipe": 1,
+        "forbitAppList": [],
+        "whiteList": [],
+        "configFlag": 0
+    },
+    "encrytion": {
+        "storageFlag": 1,
+        "configFlag": 0
+    }
+}

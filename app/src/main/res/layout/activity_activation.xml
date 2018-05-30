@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLogin">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="204dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="29dp"
+        android:src="@mipmap/log"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="296dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="服务器地址"
+            android:inputType="textPersonName"
+            android:text="server"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="137dp"
+            tools:textColorHighlight="@android:color/white" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:ems="10"
+            android:hint="端口号"
+            android:inputType="textPersonName"
+            android:text="8080"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            app:layout_constraintStart_toEndOf="@+id/editText"
+            tools:layout_editor_absoluteY="137dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="296dp"
+        android:layout_height="193dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="企业标识符"
+            android:inputType="textPersonName"
+            android:text="ssgm"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="账号"
+            android:inputType="textPersonName"
+            android:text="ssgm_user"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="激活密码"
+            android:inputType="textPassword"
+            android:text="34asd"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnActivation"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#05b6f3"
+            android:text="激活"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnSms"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="短信激活"
+        android:src="@mipmap/sms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMail"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <ImageButton
+        android:id="@+id/btnMail"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="扫码激活"
+        android:onClick="scan"
+        android:src="@mipmap/scan"
+        app:layout_constraintEnd_toStartOf="@+id/btnSms"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="146dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="\@ 2018 SSGM"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>
